@@ -1,7 +1,7 @@
 {
 	"name": "round-robin-scheduler",
 	"description": "A round-robin scheduler, compatible with the abstract-scheduler interface.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
 	"files": [
 		"index.js"

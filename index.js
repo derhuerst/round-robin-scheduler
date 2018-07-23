@@ -3,8 +3,8 @@
 const RoundRobin = {
 	init: function (values) {
 		if (!Array.isArray(values)) throw new Error('values must be an array')
-		this.values = values
-		this.length = values.length
+		this.values = Array.from(values)
+		this.length = this.values.length
 		this.i = 0
 	},
 
