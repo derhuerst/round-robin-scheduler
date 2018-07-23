@@ -15,11 +15,6 @@
 		"load balancing"
 	],
 	"author": "Jannis R <mail@jannisr.de>",
-	"contributors": [{
-		"name": "Andri Möll",
-		"email": "andri@dot.ee",
-		"url": "http://themoll.com"
-	}],
 	"homepage": "https://github.com/derhuerst/round-robin-scheduler",
 	"repository": "derhuerst/round-robin-scheduler",
 	"bugs": "https://github.com/derhuerst/round-robin-scheduler/issues",
@@ -27,13 +22,13 @@
 	"engines": {
 		"node": ">=6"
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"tape": "^4.9.1"
+		"abstract-scheduler": "^3.0.0",
+		"tap-min": "^1.2.2"
 	},
 	"scripts": {
-		"test": "env NODE_ENV=dev node test.js",
+		"test": "env NODE_ENV=dev node test.js | tap-min",
 		"prepublishOnly": "npm test"
 	}
 }

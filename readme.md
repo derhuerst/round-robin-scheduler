@@ -1,6 +1,6 @@
 # round-robin-scheduler
 
-**A [round-robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) [scheduler](https://en.wikipedia.org/wiki/Scheduling_(computing)), compatible with the [`abstract-scheduler`](https://www.npmjs.com/package/abstract-scheduler) interface.**
+**A [round-robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) [scheduler](https://en.wikipedia.org/wiki/Scheduling_(computing)), compatible with the [`abstract-scheduler` interface](https://www.npmjs.com/package/abstract-scheduler).**
 
 [![npm version](https://img.shields.io/npm/v/round-robin-scheduler.svg)](https://www.npmjs.com/package/round-robin-scheduler)
 [![build status](https://api.travis-ci.org/derhuerst/round-robin-scheduler.svg?branch=master)](https://travis-ci.org/derhuerst/round-robin-scheduler)
@@ -19,8 +19,20 @@ npm install round-robin-scheduler
 ## Usage
 
 ```js
-// todo
+const createRoundRobin = require('round-robin-scheduler')
+
+const roundRobin = createRoundRobin(['foo', 'bar'])
+
+roundRobin.get() // foo
+roundRobin.get() // bar
+roundRobin.add('baz') // 2
+roundRobin.length // 3
+roundRobin.get() // baz
+roundRobin.remove(0) // remove first item
+roundRobin.get() // bar
 ```
+
+`roundRobin` is compatible with the [`abstract-scheduler` interface](https://www.npmjs.com/package/abstract-scheduler).
 
 
 ## Contributing
