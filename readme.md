@@ -19,7 +19,7 @@ npm install @derhuerst/round-robin-scheduler
 ## Usage
 
 ```js
-const createRoundRobin = require('round-robin-scheduler')
+const createRoundRobin = require('@derhuerst/round-robin-scheduler')
 
 const roundRobin = createRoundRobin(['foo', 'bar'])
 
